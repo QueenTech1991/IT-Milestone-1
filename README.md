@@ -11,16 +11,26 @@
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="aboutksu.html">About KSU</a></li>
-					<li><a href="Admissions.html">Admissions</a></li>
+					<li><a href="admissions.html">Admissions</a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="wrapper">
 			<h1> Home </h1>
 <a href="http://ccse.kennesaw.edu/it">
-			<img class="images-KSU"src="images/KSU.png" alt="Ksu Logo"></a>
+	<img src="https://iteach.kennesaw.edu/images/MB_Vert_3Clr.png" alt="W3Schools.com" style="width:104px;height:142px;"></a>
 <br/>
+
+<br/>
+
+
+
+			<br/>
   <h2>Welcome to IT 5443 Web Development Milestone #1 HTML/CSS</h2>
+
+			<br/>
+
+			<br/>
   <h3>Course Description</h3>
   	<p class="paragraph">
 			<br/>
