@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Kennesaw State University </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="wrapper">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutksu.html">About KSU</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="Student Status.html">Student Status</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="wrapper">
+    <h1> Student Status </h1>
+    <a href="http://ccse.kennesaw.edu/it">
+        <img src="https://iteach.kennesaw.edu/images/MB_Vert_3Clr.png" alt="W3Schools.com" style="width:104px;height:142px;"></a>
+</div>
+
+<br/>
+</div>
+<br/>
+
+
+<br/>
+
+<h2> <ins> Student Positions Opportunity </ins> </h2>
+
+<br/>
+
+<h4>  Application for student assistant positions for the year of summer 2020 is now open. This is a great
+    opportunity for students as it will help gain better understanding and skills needed in their careers.
+    First, in order to be considered for the position, the students will need to have completed some required
+    courses and meet the minimum average grade listed below. To check for requirements and eligibility fill out
+    the form below.   </h4> <br/> <hr>
+<br/>
+
+<table class="table">
+    <tr>
+        <th>Student Status</th>
+        <th>Required Course</th>
+        <th>Required Grade Average</th>
+    </tr>
+    <tr>
+        <td>Undergraduate</td>
+        <td>
+            <ol>
+                <li>CSE 3203 Mobile System Overview</li>
+                <li>IT 4213 Mobile Web Development</li>
+                <li>IT 4323 Data Communication & Networking</li>
+                <li>IT 3123 Hardware & Software Concepts</li>
+                <li>IT 4123 Electronic Commerce</li>
+            </ol>
+        </td>
+        <td>>3.2</td>
+    </tr>
+    <tr>
+        <td>Graduate</td>
+        <td>
+            <ol>
+                <li>IT 7113 Data Visualization</li>
+                <li>IT 6713 Business Intelligence</li>
+                <li>IT 5413 Software & Development</li>
+                <li>IT 6103 IT Policy & Law</li>
+            </ol>
+        </td>
+        <td>>3.7</td>
+    </tr>
+</table>
+
+<br/>
+
+<h2>Select Student Status</h2>
+
+<br/>
+<form>
+    <style>
+
+    </style>
+
+    <input type="radio" id="undergraduate" name="selection" value="under">
+    <label for="undergraduate">Undergraduate</label><br><br>
+    <input type="radio" id="graduate" name="selection" value="grad">
+    <label for="graduate">Graduate</label><br><br>
+</form>
+<input type="submit" class="button" value="Submit" onclick="checkStudent()">
+
+<!--    Graduate Grade Selection -->
+<div id="grad" style="display: none">
+    <h1>Academic Performance Graduate</h1>
+
+    <label for="g1" id="g1r">1. IT 7113 Data Visualization:</label>
+
+    <select id="g1">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="g2" id="g2r">2. IT 6713 Business Intelligence:</label>
+
+    <select id="g2">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="g3" id="g3r">3. IT 5433 - Databases: Design and Applications:</label>
+
+    <select id="g3">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br><br>
+    <input type="submit" class="button" value="Evaluate" onclick="myCalculate()">
+    <br>
+    <p id="resultG"></p>
+</div>
+
+<!--    Undergraduate Grade Selection -->
+<div id="under" style="display: none">
+    <h1>Academic Performance Undergraduate</h1>
+
+    <label for="u1" id="u1r">1. CSE 3203 Mobile System Overview:</label>
+
+    <select id="u1">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="u2" id="u2r">2. IT 4213 Mobile Web Development:</label>
+
+    <select id="u2">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="u3" id="u3r">3. IT 4833 - Wireless Security:</label>
+
+    <select id="u3">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br>
+
+    <label for="u4" id="u4r">4. IT 3123 - Hardware and Software Concepts:</label>
+
+    <select id="u4">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+    </select>
+    <br><br>
+    <input type="submit" class="button" value="Evaluate" onclick="myCalculate()">
+    <br>
+    <p id="resultU"></p>
+    <br><br>
+
+
+
+
+<br/>
+<p> <strong> Click Here!!</<strong>
+    <a href="https://www.kennesaw.edu/admissions.php">www.kennesaw.edu/admissions.php</a>
+
+
+    <br/>
+
+
+
+
+
+
+
+    <br/>
+
+    <footer>
+<p>Web Page created by: Bilikisu Shinaba</p>
+<p>Link to class website: <a href="http://it5443.azurewebsites.net">it5443.azurewebsites.net</a>.
+</p>
+</footer>
+<p><strong>Note:</strong>This is a class project for IT 5443 Project Milestone
+    Web Development</p>
+</body>
+</html>
