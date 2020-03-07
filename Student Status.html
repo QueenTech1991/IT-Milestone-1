@@ -28,126 +28,126 @@
 
 <script type="text/javascript">
 
-                
+
             // function to initially hide the addition options until the user makes a selection
             function hide_ini_pos() {
                 var undergrad_checked = document.getElementById('Undergraduate').checked;
                 var grad_checked = document.getElementById('Graduate').checked;
-        
+
                 if(undergrad_checked == false && grad_checked == false) {
                     document.getElementById("ugpos").style.display = "none";
                     document.getElementById("gpos").style.display = "none";
-                    document.getElementById("wd").style.display = "none";
-                    document.getElementById("cs").style.display = "none";
-                    document.getElementById("da").style.display = "none";
-                    document.getElementById("cys").style.display = "none";
+                    document.getElementById("ita").style.display = "none";
+                    document.getElementById("csa").style.display = "none";
+                    document.getElementById("itb").style.display = "none";
+                    document.getElementById("csb").style.display = "none";
                     document.getElementById("calculate").style.display = "none";
                     document.getElementById("app_link").style.display = "none";
                 }
             }
-            
-           
-            // function to unhide the graduate options if graduate is checked
+
+
+            // function if graduate is checked to unhide the graduate options
             function unhide_grad() {
-                
+
                 var grad_checked = document.getElementById('Graduate').checked;
                 if(grad_checked == true) {
-                    
+
                     document.getElementById("gpos").style.display = "block";
-                    document.getElementById("ugpos").style.display = "none"; 
+                    document.getElementById("ugpos").style.display = "none";
                 }
             }
 
-             // function to unhide the undergraduate options if undergraduate is checked
+             // function inf undergraduate is checked to unhide the undergraduate options
             function unhide_undergrad() {
-                
+
                 var undergrad_checked = document.getElementById('Undergraduate').checked;
                 if(undergrad_checked == true) {
-                    
-                    document.getElementById("ugpos").style.display = "block"; 
-                    document.getElementById("gpos").style.display = "none"; 
-                    
+
+                    document.getElementById("ugpos").style.display = "block";
+                    document.getElementById("gpos").style.display = "none";
+
                 }
             }
-            
 
-            // function to display only the position selected
+
+            // function to display position selected
             function select_position() {
 
                 var undergrad_checked = document.getElementById('Undergraduate').checked;
                 var grad_checked = document.getElementById('Graduate').checked;
-                var wd_checked = document.getElementById('wd_undergrad').checked;
-                var cs_checked = document.getElementById('cs_undergrad').checked;
-                var da_checked = document.getElementById('da_grad').checked;
-                var cys_checked = document.getElementById('cys_grad').checked;
-                    
-                if(undergrad_checked == true && wd_checked == true) {
-                    
-                    var wd = document.getElementById('wd');
-		            wd.style.display = "block";
-		
-		            var cs = document.getElementById('cs');
-		            cs.style.display = "none";
-		
-            		var da = document.getElementById('da');		
-		            da.style.display = "none";
+                var ita_checked = document.getElementById('ita_undergrad').checked;
+                var csa_checked = document.getElementById('csa_undergrad').checked;
+                var itb_checked = document.getElementById('itb_grad').checked;
+                var csb_checked = document.getElementById('csb_grad').checked;
 
-		            var cys = document.getElementById('cys');		
-		            cys.style.display = "none";
+                if(undergrad_checked == true && ita_checked == true) {
+
+                    var ita = document.getElementById('ita');
+		            ita.style.display = "block";
+
+		            var csa = document.getElementById('csa');
+		            csa.style.display = "none";
+
+            		var itb = document.getElementById('itb');
+		            itb.style.display = "none";
+
+		            var csb = document.getElementById('csb');
+		            csb.style.display = "none";
 
                     var button = document.getElementById("calculate");
                     button.style.display = "block";
                 	}
 
-                else if(undergrad_checked == true && cs_checked == true) {
+                else if(undergrad_checked == true && csa_checked == true) {
 
-                    var wd = document.getElementById('wd');
-		            wd.style.display = "none";
-		
-		            var cs = document.getElementById('cs');
-		            cs.style.display = "block";
-		
-            		var da = document.getElementById('da');		
-		            da.style.display = "none";
-		
-		            var cys = document.getElementById('cys');		
-		            cys.style.display = "none";
+                    var ita = document.getElementById('ita');
+		            ita.style.display = "none";
+
+		            var csa = document.getElementById('csa');
+		            csa.style.display = "block";
+
+            		var itb = document.getElementById('itb');
+		            itb.style.display = "none";
+
+		            var csb = document.getElementById('csb');
+		            csb.style.display = "none";
+
+                    var button = document.getElementById("calculate");
+                    button.style.display = "block";
+                }
+
+                else if(grad_checked == true && itb_checked == true) {
+
+                    var ita = document.getElementById('ita');
+		            ita.style.display = "none";
+
+		            var csa = document.getElementById('csa');
+		            csa.style.display = "none";
+
+            		var itb = document.getElementById('itb');
+		            itb.style.display = "block";
+
+		            var csb = document.getElementById('csb');
+		            csb.style.display = "none";
 
                     var button = document.getElementById("calculate");
                     button.style.display = "block";
                 }
 
-                else if(grad_checked == true && da_checked == true) {
+                else if(grad_checked == true && csb_checked == true) {
 
-                    var wd = document.getElementById('wd');
-		            wd.style.display = "none";
-		
-		            var cs = document.getElementById('cs');
-		            cs.style.display = "none";
-		
-            		var da = document.getElementById('da');		
-		            da.style.display = "block";
-		
-		            var cys = document.getElementById('cys');		
-		            cys.style.display = "none";
+                    var ita = document.getElementById('ita');
+		            itastyle.display = "none";
 
-                    var button = document.getElementById("calculate");
-                    button.style.display = "block";
-                }
-                
-                else if(grad_checked == true && cys_checked == true) {
+		            var csa = document.getElementById('csa');
+		            csaform.style.display = "none";
 
-                    var wd = document.getElementById('wd');
-		            wd.style.display = "none";
-		
-		            var cs = document.getElementById('cs');
-		            csform.style.display = "none";
-		
-            		var da = document.getElementById('da');		
-		            da.style.display = "none";
-		
-		            var cys = document.getElementById('cys');		
-		            cys.style.display = "block";
+            		var itb = document.getElementById('itb');
+		            itb.style.display = "none";
+
+		            var csb = document.getElementById('csb');
+		            csb.style.display = "block";
 
                     var button = document.getElementById("calculate");
                     button.style.display = "block";
@@ -159,112 +159,112 @@
                 var grade_num;
                 if (grade_letter == 'Grade A') {
                     return 4.0;
-                }   
+                }
                 else if (grade_letter == 'Grade B') {
                     return 3.0;
-                } 
+                }
                 else if (grade_letter == 'Grade C') {
                     return 2.0;
-                } 
+                }
                 else if (grade_letter == 'Grade D') {
                     return 1.0;
-                } 
+                }
                 else {
                     return 0;
-                }          
+                }
             }
             /* function to calculate the average, determine if it meets minimum
             requirements, and display the appropriate message */
             function calc_avg() {
-                var min_gpa_ugrad = 3.2;  
+                var min_gpa_ugrad = 3.2;
                 var min_gpa_grad = 3.7;
 
                 var undergrad_checked = document.getElementById('Undergraduate').checked;
                 var grad_checked = document.getElementById('Graduate').checked;
-                var wd_checked = document.getElementById('wd_undergrad').checked;
-                var cs_checked = document.getElementById('cs_undergrad').checked;
-                var da_checked = document.getElementById('da_grad').checked;
-                var cys_checked = document.getElementById('cys_grad').checked;
-            
-                if (undergrad_checked == true && wd_checked == true) {
-                
-                var grade1 = letter_to_number(document.getElementById("wdgrade1").value);
-                var grade2 = letter_to_number(document.getElementById("wdgrade2").value);
-                var grade3 = letter_to_number(document.getElementById("wdgrade3").value);
-                var grade4 = letter_to_number(document.getElementById("wdgrade4").value);
+                var ita_checked = document.getElementById('ita_undergrad').checked;
+                var csa_checked = document.getElementById('csa_undergrad').checked;
+                var itb_checked = document.getElementById('itb_grad').checked;
+                var csb_checked = document.getElementById('csb_grad').checked;
 
-                var ave_gpa_wd = (grade1+grade2+grade3+grade4)/4;
-                    if (ave_gpa_wd>=min_gpa_ugrad) {
+                if (undergrad_checked == true && it1_checked == true) {
+
+                var grade1 = letter_to_number(document.getElementById("itagrade1").value);
+                var grade2 = letter_to_number(document.getElementById("itagrade2").value);
+                var grade3 = letter_to_number(document.getElementById("itagrade3").value);
+                var grade4 = letter_to_number(document.getElementById("itagrade4").value);
+
+                var ave_gpa_ita = (grade1+grade2+grade3+grade4)/4;
+                    if (ave_gpa_ita>=min_gpa_ugrad) {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.2."
-                        document.getElementById("output_message").innerHTML = "Congratulations, your GPA is " + ave_gpa_wd +". Please click the link to fill out the application.";
+                        document.getElementById("output_message").innerHTML = "You are Qualified!, your GPA is " + ave_gpa_ita +". Please click below to fill out the application.";
                         document.getElementById("app_link").style.display = "block";
                     }
                     else {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.2."
-                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_wd +". You do not qualify at this time."
+                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_ita +". Not Qualified."
                     }
                 }
-                else if (undergrad_checked == true && cs_checked == true) {
+                else if (undergrad_checked == true && csa_checked == true) {
 
-                var grade1 = letter_to_number(document.getElementById("csgrade1").value);
-                var grade2 = letter_to_number(document.getElementById("csgrade2").value);
-                var grade3 = letter_to_number(document.getElementById("csgrade3").value);
-                var grade4 = letter_to_number(document.getElementById("csgrade4").value);
+                var grade1 = letter_to_number(document.getElementById("csagrade1").value);
+                var grade2 = letter_to_number(document.getElementById("csagrade2").value);
+                var grade3 = letter_to_number(document.getElementById("csagrade3").value);
+                var grade4 = letter_to_number(document.getElementById("csagrade4").value);
 
-                var ave_gpa_cs = (grade1+grade2+grade3+grade4)/4;
-                    if (ave_gpa_cs>=min_gpa_ugrad) {
+                var ave_gpa_csa = (grade1+grade2+grade3+grade4)/4;
+                    if (ave_gpa_csa>=min_gpa_ugrad) {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.2."
-                        document.getElementById("output_message").innerHTML = "Congratulations, your GPA is " + ave_gpa_cs +". Please click the link to fill out the application.";
+                        document.getElementById("output_message").innerHTML = "You are Qualified!, your GPA is " + ave_gpa_csa +". Please click below to fill out the application.";
                         document.getElementById("app_link").style.display = "block";
                     }
                     else {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.2."
-                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_cs +". You do not qualify at this time."
+                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_csa +". Not Qualified."
                     }
                 }
 
-                else if (grad_checked == true && da_checked == true) {
-                var grade1 = letter_to_number(document.getElementById("dagrade1").value);
-                var grade2 = letter_to_number(document.getElementById("dagrade2").value);
-                var grade3 = letter_to_number(document.getElementById("dagrade3").value);
-                var grade4 = letter_to_number(document.getElementById("dagrade4").value);
+                else if (grad_checked == true && itb_checked == true) {
+                var grade1 = letter_to_number(document.getElementById("itbgrade1").value);
+                var grade2 = letter_to_number(document.getElementById("itbgrade2").value);
+                var grade3 = letter_to_number(document.getElementById("itbgrade3").value);
+                var grade4 = letter_to_number(document.getElementById("itbgrade4").value);
 
-                var ave_gpa_da = (grade1+grade2+grade3+grade4)/4;
-                    if (ave_gpa_da>=min_gpa_grad) {
+                var ave_gpa_itb = (grade1+grade2+grade3+grade4)/4;
+                    if (ave_gpa_itb>=min_gpa_grad) {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.7."
-                        document.getElementById("output_message").innerHTML = "Congratulations, your GPA is " + ave_gpa_da +". Please click the link to fill out the application.";
+                        document.getElementById("output_message").innerHTML = "You are Qualified!, your GPA is " + ave_gpa_itb +". Please click below to fill out the application.";
                         document.getElementById("app_link").style.display = "block";
                     }
                     else {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.7."
-                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_da +". You do not qualify at this time."
+                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_itb +". Not Qualified."
                     }
                 }
-                
-                else if (grad_checked == true && cys_checked == true) {
-                var grade1 = letter_to_number(document.getElementById("cysgrade1").value);
-                var grade2 = letter_to_number(document.getElementById("cysgrade2").value);
-                var grade3 = letter_to_number(document.getElementById("cysgrade3").value);
-                var grade4 = letter_to_number(document.getElementById("cysgrade4").value);
 
-                var ave_gpa_cys = (grade1+grade2+grade3+grade4)/4;
-                    if (ave_gpa_cys>=min_gpa_grad) {
+                else if (grad_checked == true && csb_checked == true) {
+                var grade1 = letter_to_number(document.getElementById("csbgrade1").value);
+                var grade2 = letter_to_number(document.getElementById("csbgrade2").value);
+                var grade3 = letter_to_number(document.getElementById("csbgrade3").value);
+                var grade4 = letter_to_number(document.getElementById("csbgrade4").value);
+
+                var ave_gpa_csb = (grade1+grade2+grade3+grade4)/4;
+                    if (ave_gpa_csb>=min_gpa_grad) {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.7."
-                        document.getElementById("output_message").innerHTML = "Congratulations, your GPA is " + ave_gpa_cys +". Please click the link to fill out the application.";
+                        document.getElementById("output_message").innerHTML = "Congratulations, your GPA is " + ave_gpa_csb +". Please click the link to fill out the application.";
                         document.getElementById("app_link").style.display = "block";
                     }
                     else {
                         document.getElementById("minimum").innerHTML = "The minimum GPA for this position is 3.7."
-                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_cys +". You do not qualify at this time."
+                        document.getElementById("output_message").innerHTML = "Sorry, your GPA is " + ave_gpa_csb +". Not Qualified."
                     }
 
                 }
                 }
-              
-         
+
+
 </script>
-   
-    
+
+
 
 <br/>
 
@@ -294,6 +294,9 @@
                 <li>IT 4323 Data Communication & Networking</li>
                 <li>IT 3123 Hardware & Software Concepts</li>
                 <li>IT 4123 Electronic Commerce</li>
+                <li>CS 2290 Special Topics</li>
+                <li>CS 3305 Data Structures</li>
+                <li>CS 3502 Operating Systems</li>
             </ol>
         </td>
         <td>>3.2</td>
@@ -306,6 +309,10 @@
                 <li>IT 6713 Business Intelligence</li>
                 <li>IT 5413 Software & Development</li>
                 <li>IT 6103 IT Policy & Law</li>
+                <li>CS 7263 Text Mining</li>
+                <li>CS 7125 Cloud Computing</li>
+                <li>CS 5060 Database Design</li>
+                <li>CS 7060 Mobile Intelligence</li>
             </ol>
         </td>
         <td>>3.7</td>
@@ -314,220 +321,220 @@
 
 <br/>
 
- </p>
-        </div>
-
-
-        
-
-        <div id = "choice1">
-
-
-            <h4>Please make a selection:</h4>
-            Undergraduate<input type="radio"  name = "status" value = "Undergraduate" id = "Undergraduate" onclick="unhide_undergrad()"/><br/>   
-            Graduate<input type="radio" name = "status" value = "Graduate" id = "Graduate" onclick="unhide_grad()"/><br/>
-            
-        </div>
-
-        <div id = "ugpos">
-            <!-- // hidden unless undergrad radio button is checked -->
-            <h5>Please make a selection for Undergraduate position:</h5>
-            Web Development Undergraduate<input type="radio" name = "ug_field" value = "Web Development undergrad" id = "wd_undergrad" onclick="select_position()"/><br/>
-            Computer Science Undergraduate<input type="radio" name = "ug_field" value = "Computer Science undergrad" id = "cs_undergrad" onclick="select_position()"/><br/>
-        </div>
-
-
-        <div id = "gpos">
-            <!-- // hidden unless grad radio button is checked -->
-            <h5>Please make a selection for Graduate position:</h5>
-            Cyber Security Graduate<input type="radio" name = "g_field" value = "Cyber Security grad" id = "cys_grad" onclick="select_position()"/><br/>
-            Data Analytics Graduate<input type="radio" name = "g_field" value = "Data Analytics grad" id = "da_grad" onclick="select_position()"/><br/>
-        </div>
+</p>
+</div>
 
 
 
-            
-        <div id="wd">
-        <h5>Undergraduate Web Development Position:</h5>
-        <p><form id="wdform">Please select your grades:</p>
-            <input type="text" id="wd1" value="IT 3203 Introduction to Web Development" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="wdgrade1" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-                <option value="Grade A">Grade A</option> 
-                <option value="Grade B">Grade B</option> 
-                <option value="Grade C">Grade C</option>
-                <option value="Grade D">Grade D</option>
-                <option value="Grade F">Grade F</option>   
-            </select> <br>
-         
-            <input type="text" id="wd2" value="IT 3213 Advanced Programming Principles" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="wdgrade2" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">   
-                <option value="Grade A">Grade A</option> 
-                <option value="Grade B">Grade B</option> 
-                <option value="Grade C">Grade C</option>
-                <option value="Grade D">Grade D</option>
-                <option value="Grade F">Grade F</option>   
-            </select> <br>
-         
-            <input type="text" id="wd3" value="IT 3313 Advanced Web Development" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="wdgrade3" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-                <option value="Grade A">Grade A</option> 
-                <option value="Grade B">Grade B</option> 
-                <option value="Grade C">Grade C</option>
-                <option value="Grade D">Grade D</option>
-                <option value="Grade F">Grade F</option>   
-            </select> <br>
-            
-                     
-            <input type="text" id="wd4" value="IT 3413 Mobile Web Development" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="wdgrade4" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-                <option value="Grade A">Grade A</option> 
-                <option value="Grade B">Grade B</option> 
-                <option value="Grade C">Grade C</option>
-                <option value="Grade D">Grade D</option>
-                <option value="Grade F">Grade F</option>   
-            </select> <br>
-           
-         </form></p>
-         
-        </div>
 
-        <div id="cs">
-        <h5>Undergraduate Computer Science Position:</h5>
-         <p><form id="csform">Please select your grades:</p>
-            <input type="text" id="cs1" value="CS 3223 Computer Architecture" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="csgrade1" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>   
-            </select> <br>
-         
-            <input type="text" id="cs2" value="CS 3502 Operating Systems" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="csgrade2" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">   
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         
-            <input type="text" id="cs3" value="CS 3503 Computer Organization and Architecture" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="csgrade3" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option> 
-            <option> Grade F </option> 
-            </select> <br>
-         
-            <input type="text" id="cs4" value="CS 3504 Advanced Topics in Computer Science" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="csgrade4" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         </form></p>
-        </div>
+<div id = "choice1">
+
+
+    <h4>Please make a selection:</h4>
+    Undergraduate<input type="radio"  name = "status" value = "Undergraduate" id = "Undergraduate" onclick="unhide_undergrad()"/><br/>
+    Graduate<input type="radio" name = "status" value = "Graduate" id = "Graduate" onclick="unhide_grad()"/><br/>
+
+</div>
+
+<div id = "ugpos">
+    <!-- // hidden unless undergrad radio button is checked -->
+    <h5>Please make a selection for Undergraduate position:</h5>
+    Information Technology Undergraduate<input type="radio" name = "ug_field" value = "Information Technology undergrad" id = "ita_undergrad" onclick="select_position()"/><br/>
+    Computer Science Undergraduate<input type="radio" name = "ug_field" value = "Computer Science undergrad" id = "csa_undergrad" onclick="select_position()"/><br/>
+</div>
+
+
+<div id = "gpos">
+    <!-- // hidden unless grad radio button is checked -->
+    <h5>Please make a selection for Graduate position:</h5>
+    Information Technology Graduate<input type="radio" name = "g_field" value = "Information Technology grad" id = "itb_grad" onclick="select_position()"/><br/>
+    Computer Science Graduate<input type="radio" name = "g_field" value = "Computer Science grad" id = "csb_grad" onclick="select_position()"/><br/>
+</div>
 
 
 
-        <div id="da">
-        <h5>Graduate Data Analytics Position:</h5>
-         <p><form id="daform">Please select your grades:</p>
-            <input type="text" id="da1" value="CS 3305 Data Structures" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="dagrade1" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>   
-            </select> <br>
-         
-            <input type="text" id="da2" value="CS 3410 Introduction to Database Systems" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="dagrade2" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">   
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         
-            <input type="text" id="da3" value="CS 4265 Big Data Analytics" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="dagrade3" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option> 
-            <option> Grade F </option> 
-            </select> <br>
-         
-            <input type="text" id="da4" value="CS 4412 Data Mining" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="dagrade4" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         </form></p>
-        </div>
 
-        <div id="cys">
-        <h5>Graduate Cyber Security Position:</h5>
-         <p><form id="cysform">Please select your grades:</p>
-            <input type="text" id="cys1" value="IT 4883 Infrastructure Defense" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="cysgrade1" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>   
-            </select> <br>
-         
-            <input type="text" id="cys2" value="CS 4612 Secure Software Development" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="cysgrade2" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">   
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         
-            <input type="text" id="cys3" value="IT 4823 Information Security Administration & Privacy" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;">  
-            <select id="cysgrade3" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option> 
-            <option> Grade F </option> 
-            </select> <br>
-         
-            <input type="text" id="cys4" value="IT 4843 Ethical Hacking for Effective Defense" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <select id="cysgrade4" style="font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
-            <option> Grade A </option> 
-            <option> Grade B </option> 
-            <option> Grade C </option>
-            <option> Grade D </option>
-            <option> Grade F </option>    
-            </select> <br>
-         </form></p>
-        </div>
+<div id="ita">
+    <h5>Undergraduate Information Technology:</h5>
+    <p><form id="itaform">Please select your grades:</p>
+    <input type="text" id="ita1" value="IT 4213 Mobile Web Development" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itagrade1" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option value="Grade A">Grade A</option>
+        <option value="Grade B">Grade B</option>
+        <option value="Grade C">Grade C</option>
+        <option value="Grade D">Grade D</option>
+        <option value="Grade F">Grade F</option>
+    </select> <br>
 
-        <div id="calculate">
-            <input type="button" value="Evaluate" onclick="calc_avg()" style="font-size: 18px; background-color: rgb(230, 240, 146);">
-        </div>
+    <input type="text" id="ita2" value="IT 4323 Data Communication & Networking" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itagrade2" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option value="Grade A">Grade A</option>
+        <option value="Grade B">Grade B</option>
+        <option value="Grade C">Grade C</option>
+        <option value="Grade D">Grade D</option>
+        <option value="Grade F">Grade F</option>
+    </select> <br>
 
-        <div id="minimum"></div>
-        <div id="output_message"></div>
-        
-        <div id="app_link">
-            <a href="application form.html" target="_blank" style="font-size: 18px;">Click Here for Application Form</a>
-        </div>
+    <input type="text" id="ita3" value="IT 3123 Hardware & Software Concepts" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itagrade3" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option value="Grade A">Grade A</option>
+        <option value="Grade B">Grade B</option>
+        <option value="Grade C">Grade C</option>
+        <option value="Grade D">Grade D</option>
+        <option value="Grade F">Grade F</option>
+    </select> <br>
 
-    <br/>
+
+    <input type="text" id="ita4" value="IT 4123 Electronic Commerce" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itagrade4" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option value="Grade A">Grade A</option>
+        <option value="Grade B">Grade B</option>
+        <option value="Grade C">Grade C</option>
+        <option value="Grade D">Grade D</option>
+        <option value="Grade F">Grade F</option>
+    </select> <br>
+
+    </form></p>
+
+</div>
+
+<div id="csa">
+    <h5>Undergraduate Computer Science:</h5>
+    <p><form id="csaform">Please select your grades:</p>
+    <input type="text" id="csa1" value="CSE 3203 Mobile System Overview" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csagrade1" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csa2" value="CS 2290 Special Topics" size="70px" style="font-size: 15px; font-family: Verdana, Geneva, Geneva, Geneva, Geneva;">
+    <select id="csagrade2" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csa3" value="CS 3305 Data Structures" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csagrade3" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csa4" value="CS 3502 Operating Systems" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csagrade4" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+    </form></p>
+</div>
+
+
+
+<div id="itb">
+    <h5>Graduate Information Technology:</h5>
+    <p><form id="itbform">Please select your grades:</p>
+    <input type="text" id="itb1" value="IT 7113 Data Visualization" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itbgrade1" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="itb2" value="IT 6713 Business Intelligence" size="70px" style="font-size: 15px; font-family: VGeneva, Geneva, Geneva, Geneva;">
+    <select id="itbgrade2" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="itb3" value="IT 5413 Software & Development" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itbgrade3" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="itb4" value="IT 6103 IT Policy & Law" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="itbgrade4" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+    </form></p>
+</div>
+
+<div id="csb">
+    <h5>Graduate Computer Science:</h5>
+    <p><form id="csbform">Please select your grades:</p>
+    <input type="text" id="csb1" value="CS 7263 Text Mining" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csbgrade1" style="font-size: 15px; font-family: VGeneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csb2" value="CS 7125 Cloud Computing" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csbgrade2" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csb3" value="CS 5060 Database Design" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csbgrade3" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+
+    <input type="text" id="csb4" value="CS 7060 Mobile Intelligence" size="70px" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+    <select id="csbgrade4" style="font-size: 15px; font-family: Geneva, Geneva, Geneva, Geneva;">
+        <option> Grade A </option>
+        <option> Grade B </option>
+        <option> Grade C </option>
+        <option> Grade D </option>
+        <option> Grade F </option>
+    </select> <br>
+    </form></p>
+</div>
+
+<div id="calculate">
+    <input type="button" value="Evaluate" onclick="calc_avg()" style="font-size: 18px; background-color: rgb(230, 240, 146);">
+</div>
+
+<div id="minimum"></div>
+<div id="output_message"></div>
+
+<div id="app_link">
+    <a href="application form.html" target="_blank" style="font-size: 18px;">Click Here for Application Form</a>
+</div>
+
+<br/>
 
 <br/>
 <p> <strong> Click Here!!</<strong>
